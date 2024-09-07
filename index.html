@@ -3,84 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Tech Blog</h1>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#posts">Posts</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div>
+            <img class="logo" src="./imgs/logo1.jpg" alt="">
         </div>
+        <ul class="menu">
+            <li class="menus">Home</li>
+            <li class="menus">About</li>
+            <li id="touch" class="menus">Get in touch
+            </li>
+        </ul>
     </header>
-    
-    <main id="home">
-        <section class="hero">
-            <h2>Welcome to the Tech Blog</h2>
-            <p> <i>Letest Tech News is Live</i> </p>
-        </section>
-        
-        <section id="posts">
-            <div class="container">
-                <article class="post">
-                    <h3>Swiggy introduces 'Incognito Mode' for private ordering; see details</h3>
-                    <p>Swiggy has launched a new privacy-focused feature called "Incognito Mode." This industry-first feature allows users to place orders for food and groceries privately, ensuring their selections remain hidden from their order history.Swiggy recognises that not all orders are meant to be seen by everyone, especially when shared accounts are common. Incognito Mode addresses this need, allowing users to order surprise gifts, personal treats, or discreet purchases without worrying about their choices appearing in their order history.
 
-                        "As social as our lives are becoming, there are still things we prefer to keep private, and Incognito Mode is designed to address that need," said Rohit Kapoor, CEO of Swiggy’s Food Marketplace. “Whether you’re ordering a meal or making a quick purchase, Incognito Mode ensures your choices remain private. We’re excited to offer our users a seamless experience that lets them enjoy Swiggy’s diverse offerings with enhanced privacy.”</p>
-                </article>
-                <article class="post">
-                    <h3>NASA's ex-engineer warns Boeing Starliner could crash in populated areas as it begins return journey</h3>
-                    <p>As NASA prepares to autonomously undock Boeing's Starliner spacecraft from the International Space Station (ISS for its return to Earth, concerns are growing about the safety of the mission. Retired NASA Johnson Space Center engineer Don Nelson has issued a stark warning, suggesting that the spacecraft could lose control during its de-orbit and pose a risk to populated areas. <br>
+    <section class="bio">
+        <div class="left">
+            <div>Hi, my name is <span id="purple">RAJDWIP</span> and I'm a</div>
+            <span id="element"></span>
+            <p> I am currently pursuing my engineering degree at Netaji Subhash Engineering College, where I am deeply engaged in exploring the fascinating world of technology and software development. With a strong foundation in Data Structures and Algorithms (DSA), and JAVA as well as AWS . I am enthusiastic about solving complex problems and optimizing solutions.</p>
+        </div>
+        <div class="right">
+            <img class="mypic" src="./imgs/picofme (1).png" alt="">
+        </div>
+    </section>
 
-                        The Starliner, plagued by technical issues with its propulsion system, was originally meant to return two NASA astronauts, Butch Wilmore and Sunita Williams, to Earth. However, safety concerns led NASA to abandon those plans, with the astronauts now scheduled to return on a SpaceX mission in February 2025. Despite the lack of crew aboard, Nelson fears the spacecraft still presents significant risks. <br>
-                        
-                        "There is a high probability that the Boeing Starliner service module's thrusters will exceed their design temperature limits and fail during the deorbit burn," Nelson wrote in an email to NASA’s Commercial Crew Program leadership. He warned that the debris from the spacecraft could impact a populated area, mentioning "downtown Houston" as a potential risk zone. <br>
-                        
-                        Nelson argues that the only safe option is to deorbit Starliner into the Pacific Ocean, using a "death dive" trajectory to avoid any risk of impact over land. He criticized NASA’s safety panel for remaining silent on the issue, expressing concern that the current plan could endanger lives. <br>
-                        
-                        In an interview with Futurism, Nelson elaborated on his concerns, warning that an imperfect deorbit burn could cause Starliner to break up during reentry. If that happens, debris from the spacecraft could fall over populated areas. He questioned the logic behind deeming Starliner unsafe for a crew return while still planning to bring the vehicle back uncrewed. "If this thing is not safe enough to bring the crew back, why is it safe enough to bring the vehicle back and risk having it impact in a populated area?" he asked. <br>
-                        
-                        Nelson, who contributed to numerous NASA missions from Mercury to Apollo and the ISS before retiring in 1999, has a history of raising safety concerns. In his 2017 book *The NASA Letters*, he detailed warnings he made about NASA’s Space Shuttle Columbia before its fatal disintegration in 2003, which killed all seven astronauts aboard. <br>
-                        
-                        Starliner’s service module, which houses the malfunctioning thrusters, was designed to burn up during reentry. However, the spacecraft’s crew module is scheduled to land safely in White Sands, New Mexico, using parachutes. NASA has stated it will perform a "breakout burn" to quickly move Starliner away from the ISS in case of control issues during undocking. <br>
-                        
-                        Still, Nelson fears that the deorbit burn could cause the seals in Starliner's thrusters to overheat and fail. If the burn is incomplete, he warns, Starliner could remain trapped in orbit, circling the Earth for years before eventually deorbiting unpredictably. He argues that the safest course of action is to lower Starliner into the Pacific Ocean to ensure it doesn't cause damage if it breaks up. <br>
-                        
-                        The Starliner mission has been another blow to Boeing, which has struggled with technical setbacks and financial losses in recent years. The spacecraft, which was developed under NASA’s Commercial Crew Program alongside SpaceX’s Crew Dragon, has experienced numerous delays and technical problems. While SpaceX has successfully flown nearly a dozen crewed missions for NASA, Boeing’s first attempt at a crewed flight has been marred by propulsion system failures. <br>
-                        
-                        Nelson attributes Starliner's issues to a "buddy-buddy" relationship between NASA and Boeing, as well as inadequate leadership. He emphasized that SpaceX’s Crew Dragon is currently the only viable option for safely returning astronauts from the ISS. <br>
-                        
-                        Boeing's challenges extend beyond Starliner. A recent report by NASA's inspector general highlighted significant issues with Boeing’s Space Launch System (SLS), the rocket NASA hopes to use to send astronauts to the Moon. The report cited escalating costs, schedule delays, and concerns over quality management. Nelson called the SLS a "monster disaster waiting to happen" and warned that Congress may eventually cancel the program due to its spiraling costs. <br>
-                        
-                        In response to inquiries, NASA did not provide a comment, while Boeing reiterated its commitment to safety. "Boeing continues to focus, first and foremost, on the safety of the crew and spacecraft," the company stated, adding that it is executing the mission as determined by NASA and preparing the spacecraft for a "safe and successful uncrewed return." <br>
-                        
-                        As NASA prepares to undock Starliner from the ISS later today, there are growing concerns over the spacecraft’s ability to safely complete its return to Earth. For many involved in the mission, it will be a tense moment as they wait to see whether Boeing’s troubled spacecraft can successfully land without incident.</p>
+    <hr>
 
-                        <h3>Bill Gates uses this AI feature the most because of his packed meeting schedule</h3>
-                        <p>Bill Gates, renowned philanthropist and Microsoft co-founder, is known for his busy schedule packed with meetings. To manage the deluge of information and make the most of his time, Gates has turned to AI-powered meeting summaries <br>In a recent interview with The Verge, Gates revealed his favourite AI feature: "I'd say the feature I use the most is the meeting summary, which is integrated into [Microsoft] Teams, which I use a lot. The ability to interact and not just get the summary, but ask questions about the meeting, is pretty fantastic." <br>Gates isn't alone in embracing AI for workplace productivity. A survey by Hubspot found that employees utilising AI tools save up to two hours per day on tasks like scheduling meetings, taking notes, and entering data. Some Copilot users even claim the tool enables them to skip meetings altogether by catching up on the AI-generated summaries.</p>
+        <section class="experience">
+            <h1>Experience</h1>
 
-                        <h3>India's Ashwini Vaishnaw among TIME's 100 Most Influential People in AI; see list featuring Sundar Pichai, Anil Kapoor, Satya Nadella, Sam Altman and more</h3>
-                        <p>TIME magazine has unveiled its inaugural list of the 100 Most Influential People in AI, recognising individuals shaping the rapidly evolving field of artificial intelligence. Ashwini Vaishnaw, India's Minister of Electronics and Information Technology, features prominently on the list, highlighting his pivotal role in driving India's AI strategy and fostering a robust technology ecosystem. <br>
-                            Vaishnaw is joined by a notable cohort of Indians and people of Indian origin, including Bollywood actor Anil Kapoor, known for his roles in films like "Slumdog Millionaire" and "Mission: Impossible - Ghost Protocol." Kapoor's inclusion reflects the growing influence of AI in the entertainment industry.</p>
-                </article>
-                <!-- Add more posts here -->
+            <div class="hr-line">
+                <div class="vr-line">
+                    <img class="icons" src="./imgs/java.png" alt="">
+
+                    <div class="vr-role"><span class="role">Java Developer</span> (2023-2024)</div>
+                    <div class="vr-desc">Passionate Java Developer with hands-on experience in building robust and scalable applications. Skilled in core Java, object-oriented programming, and various frameworks such as Spring and Hibernate. Adept at problem-solving, writing clean code.</div>
+                </div>
+                <div class="vr-line">
+                    <img class="icons" src="./imgs/experience/app.png" alt="">
+
+                    <div class="vr-role"><span class="role">Web Develpoer</span> (2012-2024)</div>
+                    <div class="vr-desc">Creative Front-End Developer with expertise in crafting visually appealing and user-friendly web interfaces. Proficient in HTML, CSS, and JavaScript, with hands-on experience in modern frameworks and libraries such as React and Angular. </div>
+                </div>
+                <div class="vr-line">
+                    <img class="icons" src="./imgs/experience/fullStack.png" alt="">
+
+                    <div class="vr-role"><span class="role">Full Stack Developer & AWS Architecture</span> (2023-2024)</div>
+                    <div class="vr-desc">Experienced Full Stack Developer with a robust understanding of both front-end and back-end technologies. Skilled in creating dynamic,Proficient in front-end technologies such as HTML, CSS, and JavaScript frameworks (React, Angular), as well as back-end technologies including Node.js, Python, and Java.</div>
+                </div>
+                <div class="vr-line">
+                    <img class="icons" src="./imgs/experience/mentor.png" alt="">
+
+                    <div class="vr-role"><span class="role">Mentor</span> (2021-current)</div>
+                    <div class="vr-desc">Dedicated Computer Science Instructor with experience teaching foundational and advanced computer science concepts to diploma students. Skilled in delivering engaging lectures, creating practical assignments, and fostering a deep understanding of programming, algorithms, and software development principles. .</div>
+                </div>
             </div>
         </section>
-    </main>
-    
+
+    <hr>
+
+    <section class="projects">
+        <h1>Projects</h1>
+        <div class="slider">
+            <div class="img-container">
+                <img class="pr-img" src="./imgs/projects/chat gpt.jpg" alt="">
+                <img class="pr-img" src="./imgs/projects/google photos.jpg" alt="">
+                <img class="pr-img" src="./imgs/projects/meta.jpeg" alt="">
+            </div>
+            <i class="fa-solid fa-angles-left prev btn"></i>
+            <i class="fa-solid fa-angles-right next btn"></i>
+        </div>
+    </section>
+
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Tech Blog Rajdwip Ghosh. All rights reserved.</p>
+        <h2>Don't forget to follow me here...</h2>
+        <div class="social">
+            
+            <!-- <i class="fa-brands fa-square-instagram media"i> -->
+           
+           <a href="https://www.linkedin.com/in/rajdwip-ghosh-1ba955237/"> <i class="fa-brands fa-linkedin media"></i></a>
+           <a href="https://github.com/Rajdwip-69"> <i class="fa-brands fa-github media"></i></a>
         </div>
     </footer>
 
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

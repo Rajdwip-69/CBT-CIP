@@ -1,17 +1,41 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const links = document.querySelectorAll('nav a');
-    
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            
-            window.scrollTo({
-                top: targetElement.offsetTop,
-                behavior: 'smooth'
-            });
-        });
-    });
-});
+var typed = new Typed('#element', {
+    strings: ['Software Developer','Web Developer','Mentor', 'Java Develpoer.'],
+    typeSpeed: 70,
+  });
+
+
+const prevEle = document.querySelector(".prev")
+const nextEle = document.querySelector(".next")
+const imgContainerEle = document.querySelector(".img-container")
+const imgEle = document.querySelectorAll(".pr-img")
+
+let currImg = 1;
+let timeout;
+
+nextEle.addEventListener("click", ()=>{
+    currImg++
+    clearInterval(timeout)
+    updateImg()
+})
+prevEle.addEventListener("click", ()=>{
+    currImg--
+    clearTimeout(timeout)
+    updateImg()
+})
+
+updateImg()
+
+function updateImg(){
+    if(currImg > imgEle.length){
+        currImg = 1
+    }else if(currImg < 1){
+        currImg = imgEle.length
+    }
+    imgContainerEle.style.transform = `translateX(${-(currImg - 1) * 100}%)`
+
+    timeout = setTimeout(()=>{
+        currImg++
+        updateImg()
+    }, 2000)
+}
+
